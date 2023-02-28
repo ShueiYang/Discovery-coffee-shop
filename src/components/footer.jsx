@@ -9,7 +9,7 @@ const Footer = () => {
             <ul className={styles.social_icon}>
                 <li><b>&copy; {new Date().getFullYear()} ShueiYang </b></li>
                          
-                <li><a href="https://github.com/ShueiYang" rel="noreferrer"
+                <li><a href="https://github.com/ShueiYang/Discovery-coffee-shop" rel="noreferrer"
                     target="_blank" className="cool-link"><IoLogoGithub/></a></li>
                
                 <li><a href="https://www.linkedin.com/in/shueiyang" rel="noreferrer"
