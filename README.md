@@ -1,3 +1,9 @@
+# Discover Coffee Shop Project
+
+1st project using the Next js framework to build a coffee shop discovery, and using Foursquare API to get data for the coffee shop's location and tips, also using Airtable this time for data persistence.
+
+#
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

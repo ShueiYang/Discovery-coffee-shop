@@ -1,0 +1,30 @@
+
+.social_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social_icon li {
+    list-style: none;
+}
+
+.social_icon li b {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+.social_icon li a {
+    font-size: 1.75rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social_icon li a:hover {
+    transform: translateY(-0.5rem);
+}

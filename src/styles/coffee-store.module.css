@@ -1,0 +1,125 @@
+  .container {
+    display: grid;
+    gap: 2rem;
+    padding-top: 2.75rem /* 44px */;
+    padding-bottom: 2.5rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+  
+  .layout {
+    margin-bottom: 2rem;
+    min-height: 85vh;
+  }
+  
+  .col1 {
+    place-self: center;
+  }
+  
+  .backToHomeLink {
+    font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+    font-weight: 700;
+  }
+  
+  .nameWrapper {
+    margin-bottom: 1rem /* 16px */;
+    margin-top: 1rem /* 16px */;
+  }
+  
+  .name {
+    color: var(--text-white-100);
+    font-size: 2.25rem /* 36px */;
+    line-height: 2.5rem /* 40px */;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+  }
+  
+  .storeImgWrapper {
+    padding-top: 1rem /* 16px */;
+    padding-bottom: 1rem /* 16px */;
+  }
+  
+  .storeImg {
+    box-shadow: 4px 6px 8px rgba(0,0,0,0.5);
+    border-radius: 0.75rem;
+    max-width: 100%;
+    max-height: 37.5rem;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  .col2 {
+    border-radius: 1rem /* 16px */;
+    padding: 1rem /* 16px */;
+    display: flex;
+    flex-direction: column;
+    max-width: 37.5rem;
+    width: 100%;
+    align-self: center;
+    margin: 2rem auto 0;
+    color: rgba(55, 59, 100, 1);
+  }
+  
+  .iconWrapper {
+    display: flex;
+    margin-bottom: 1rem /* 16px */;
+  }
+  
+  .text {
+    padding-left: 0.5rem /* 8px */;
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .upvoteButton {
+    width: fit-content;
+    color: var(--text-detail-100);
+    margin-top: 1rem /* 16px */;
+    margin-bottom: 1rem /* 16px */;
+    padding: 0.75rem;
+  
+    background-color: var(--text-red-dark);
+    cursor: pointer;
+    color: white;
+    outline: 0;
+    border: 0px;
+    font-size: 1rem;
+  }
+  
+  .upvoteButton:hover {
+    background-color: #800606;
+  }
+
+  @media (min-width: 1536px) {
+    .col2 {
+      max-width: 85%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .layout {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      width: 100%;
+    }
+    .layout {
+      padding-left: 1.5rem ;
+      padding-right: 1.5rem ;
+    }
+  }
