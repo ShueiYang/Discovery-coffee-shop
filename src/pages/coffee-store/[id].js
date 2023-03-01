@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "@/styles/coffee-store.module.css";
-import homeStyles from "@/styles/home.module.css";
+import homeStyles from "@/styles/Home.module.css";
 import { useContext, useEffect, useState } from "react";
 import useStoreDataFromAirtable from "@/hooks/swr";
 
