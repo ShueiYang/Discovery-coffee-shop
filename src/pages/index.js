@@ -55,7 +55,7 @@ export default function Home(props) {
       }
     }
     setCoffeStoresByLocation(latLong);
-  }, [latLong]);
+  }, [latLong, dispatch]);
   
   function handleBannerBtnClick () {
     handleTrackLocation();

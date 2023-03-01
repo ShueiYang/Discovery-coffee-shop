@@ -50,7 +50,7 @@ export async function getStaticPaths() {
   }
 };
 
-const coffeeStore = (initialProps) => {
+const CoffeeStore = (initialProps) => {
   const router = useRouter();
   const id = router.query.id;
     
@@ -79,7 +79,7 @@ const coffeeStore = (initialProps) => {
       setStoreData(initialProps.coffeeStore)
       upsertStoreData(initialProps.coffeeStore);
     }
-  }, [id, initialProps, initialProps.coffeeStore]);
+  }, [id, initialProps.coffeeStore, coffeeStores]);
   
   
   useEffect(()=> {
@@ -207,4 +207,4 @@ const coffeeStore = (initialProps) => {
   )
 };
 
-export default coffeeStore;     
+export default CoffeeStore;     

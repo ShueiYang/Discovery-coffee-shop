@@ -9,7 +9,7 @@ export const options = {
 };
 
 function getUrlForCoffeeStores (query, latLong, limit) {
-    return `https://api.foursquare.com/v3/places/search?query=${query}&ll=${latLong}&sort=DISTANCE&limit=${limit}`
+    return `https://api.foursquare.com/v3/places/search?query=${query}&ll=${latLong}&radius=5500&sort=DISTANCE&limit=${limit}`
 };
 
 
