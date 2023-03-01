@@ -7,6 +7,9 @@ export async function getCoffeeStoreTips (fsqId, limit) {
         , options);
         if(response.ok) {
             const data = await response.json();
+            if(data.length === 0) {
+                return "";
+            }
             return data[0].text   
         }
     } catch (error) {

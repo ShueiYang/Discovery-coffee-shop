@@ -7,6 +7,9 @@ export async function getListOfCoffeeStoresPhotos (fsqId, limit) {
         , options);
         if(response.ok) {
             const data = await response.json();
+            if(data.length === 0) {
+                return "";
+            }
             return `${data[0].prefix}360x220${data[0].suffix}`;   
         } 
     } catch (error) {
