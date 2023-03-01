@@ -13,6 +13,12 @@
     font-size: 3rem /* 48px */;
     line-height: 1;
   }
+
+  @-moz-document url-prefix() {
+    .title {
+      letter-spacing: -0.040em;
+    }
+  }
   
   .title1 {
     color: rgba(249, 250, 251, 1);
